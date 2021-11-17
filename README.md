@@ -1,3 +1,3 @@
 # AfroFashion
-Projet Startup POC Afrofashionthèque
+Projet Startup POC Afrofashionthèque 
 
