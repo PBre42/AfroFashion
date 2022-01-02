@@ -1,13 +1,13 @@
-package com.telecomste.afrofashion;
+package fr.tse.poc.poc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AfrofashionApplication {
+public class PocApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AfrofashionApplication.class, args);
+		SpringApplication.run(PocApplication.class, args);
 	}
 
 }
