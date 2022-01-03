@@ -10,6 +10,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -24,10 +26,11 @@ public class Reponse {
 	@Id
 	private Long id;
 	@Column(name = "is_true", nullable = false)
-	private boolean isTrue;
+	private Boolean isTrue;
 	@Column(name = "video_reponse", nullable = false)
 	private String videoReponse;
 	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "etape_reponse_FID")
+	@JsonIgnore
 	private Etape etape;
 }
