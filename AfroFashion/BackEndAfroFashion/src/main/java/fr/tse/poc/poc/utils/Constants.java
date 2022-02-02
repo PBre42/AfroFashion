@@ -7,10 +7,10 @@ public class Constants {
 	final public static Long STEP_THREE_ID = 3L;	
 	final public static Long STEP_FOUR_ID = 4L;
 
-    final public static String STEP_ONE_VIDEO = "videoq1.mp4";	
-	final public static String STEP_TWO_VIDEO = "videoq2.mp4";	
-	final public static String STEP_THREE_VIDEO = "videoq3.mp4";	
-	final public static String STEP_FOUR_VIDEO = "videoq4.mp4";
+    final public static String STEP_ONE_VIDEO = "../assets/videoq1.mp4";	
+	final public static String STEP_TWO_VIDEO = "../assets/video2.mp4";	
+	final public static String STEP_THREE_VIDEO = "../assets/video3.mp4";	
+	final public static String STEP_FOUR_VIDEO = "../assets/video4.mp4";
 
 
     final public static Long RESPONSE_ONE_TRUE_ID = 1L;    
@@ -32,14 +32,14 @@ public class Constants {
     final public static Boolean RESPONSE_FOUR_FALSE_ISTRUE = false;
 
     
-    final public static String RESPONSE_ONE_TRUE_VIDEO_REPONSE = "videoreponsetrue1.mp4";    
-    final public static String RESPONSE_TWO_TRUE_VIDEO_REPONSE = "videoreponsetrue2.mp4";
-    final public static String RESPONSE_THREE_TRUE_VIDEO_REPONSE = "videoreponsetrue3.mp4";
-    final public static String RESPONSE_FOUR_TRUE_VIDEO_REPONSE = "videoreponsetrue4.mp4";
-    final public static String RESPONSE_ONE_FALSE_VIDEO_REPONSE = "videoreponsefalse1.mp4";   
-    final public static String RESPONSE_TWO_FALSE_VIDEO_REPONSE = "videoreponsefalse2.mp4";
-    final public static String RESPONSE_THREE_FALSE_VIDEO_REPONSE = "videoreponsefalse3.mp4";
-    final public static String RESPONSE_FOUR_FALSE_VIDEO_REPONSE = "videoreponsefalse4.mp4";
+    final public static String RESPONSE_ONE_TRUE_VIDEO_REPONSE = "../assets/videoreponsetrue1.mp4";    
+    final public static String RESPONSE_TWO_TRUE_VIDEO_REPONSE = "../assets/videoreponsetrue2.mp4";
+    final public static String RESPONSE_THREE_TRUE_VIDEO_REPONSE = "../assets/videoreponsetrue3.mp4";
+    final public static String RESPONSE_FOUR_TRUE_VIDEO_REPONSE = "../assets/videoreponsetrue4.mp4";
+    final public static String RESPONSE_ONE_FALSE_VIDEO_REPONSE = "../assets/videoreponsefalse1.mp4";   
+    final public static String RESPONSE_TWO_FALSE_VIDEO_REPONSE = "../assets/videoreponsefalse2.mp4";
+    final public static String RESPONSE_THREE_FALSE_VIDEO_REPONSE = "../assets/videoreponsefalse3.mp4";
+    final public static String RESPONSE_FOUR_FALSE_VIDEO_REPONSE = "../assets/videoreponsefalse4.mp4";
 
 
     final public static Long PARCOURS_ONE_ID = 1L;

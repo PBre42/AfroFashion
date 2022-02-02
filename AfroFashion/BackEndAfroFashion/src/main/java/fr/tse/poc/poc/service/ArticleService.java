@@ -1,10 +1,12 @@
 package fr.tse.poc.poc.service;
 
 
-import org.springframework.http.ResponseEntity;
+import java.util.List;
+
+
 
 import fr.tse.poc.poc.domain.Article;
 
 public interface ArticleService {
-    public ResponseEntity<Article> findAllArticles();
+    public List<Article> findAllArticles();
 }

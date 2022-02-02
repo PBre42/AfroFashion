@@ -2,10 +2,11 @@ package fr.tse.poc.poc.service;
 
 import java.util.List;
 
+
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import fr.tse.poc.poc.dao.EtapeRepository;
 import fr.tse.poc.poc.dao.ParcoursRepository;
@@ -38,6 +39,7 @@ public class ParcoursServiceImpl implements ParcoursService{
     }
 
     @Override
+    @Transactional(readOnly=true)
     public Parcours getParcoursByResponseID(Long responseID) {
         Etape etape=reponseRepository.findById(responseID).get().getEtape();
         return parcoursRepository.findParcourByEtape(etape.getId());

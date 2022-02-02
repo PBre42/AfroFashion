@@ -147,6 +147,19 @@ public class LoadDatabase {
 
     }
 
-   
+    @Bean
+	@Profile("test")
+	CommandLineRunner initTestDatabase(ArticleRepository articleRepository,
+                                        EtapeRepository etapeRepository,
+                                        ReponseRepository reponseRepository,
+                                        ParcoursRepository parcoursRepository) {
+		
+		return args -> {			
+			initSteps(etapeRepository,reponseRepository,parcoursRepository);					
+			initArticles(articleRepository);					
+		};
+	
     
+}
+
 }

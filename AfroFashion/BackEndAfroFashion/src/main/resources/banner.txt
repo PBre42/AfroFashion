@@ -1,0 +1,8 @@
+    ____    ____    ______
+   / __ \  / __ \  / ____/
+  / /_/ / / / / / / /     
+ / ____/ / /_/ / / /___   
+/_/      \____/  \____/   
+${application.title} ${application.version}
+Powered by Spring Boot ${spring-boot.version}
+:: Projet POC ::    (v 1.0.0)
