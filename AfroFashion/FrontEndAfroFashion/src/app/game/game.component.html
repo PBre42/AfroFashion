@@ -1,0 +1,13 @@
+<div id="full-screen-video-container">
+    <video controls autoplay id="myVideo" (ended)="videoEnd()">
+      <source *ngIf="this.url" src="{{this.url}}" type="video/mp4" />
+    </video>
+    <ng-container *ngIf="show">
+        <div class="clearfix bg-secondary" class="full-screen-video-content" id="full-screen-video-content">
+            <div  class="float-start"><button (click)="employeeDetails(this.idGauche)" class="btn btn-info">Choix 1</button></div>
+            <div class="float-end"><button (click)="employeeDetails(this.idDroite)" class="btn btn-danger">Choix 2</button></div>
+          </div>
+    </ng-container>
+</div>
+
+  

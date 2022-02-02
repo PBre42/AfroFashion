@@ -1,0 +1,115 @@
+
+/*********************************************/
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600');
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+/*Conbtrols hide */
+video::-webkit-media-controls-panel 
+{
+    display: none !important;
+    opacity: 1 !important;
+}
+#full-screen-video-container {
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    /*border:10px solid gray;*/
+    /*border-radius: 10px;*/
+}
+
+#full-screen-video-container > video {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.full-screen-video-content {
+    z-index: 2;
+    position: absolute;
+    bottom: 0px;
+    background-color: transparent;
+    color: #333;
+    padding: 0px;
+    font-size: 70px;
+    width: 100%;
+}
+#full-screen-video-container:after{
+    content: '';
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;   
+}
+.content{
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    padding: 0px;
+    font-size: 70px;
+    width: 100%;
+    margin-bottom: 20%;
+}
+.start{
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    
+    text-align: center;
+    width:100%;
+   
+}
+ion-icon{
+    display: inline-block;
+    font-size: 200px;
+    color: #fcd69ea6;
+    vertical-align: middle;
+    text-align: center;
+}
+ion-icon:hover{
+    /*cursor:default;*/
+    color: #e0e0e0;
+}
+h1{
+    cursor:default;
+    text-align: center;
+    font-weight: 300;
+    font-size: 150px;
+    font-family: 'Neonderthaw', cursive;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+   /* 1. Pas de support d'object-fit */
+  @media (min-aspect-ratio: 16/9) {
+    #full-screen-video-container > video {
+      height: 300%;
+      top: -100%;
+    }
+  }
+  @media (max-aspect-ratio: 16/9) {
+    #full-screen-video-container > video {
+      width: 300%;
+      left: -100%;
+    }
+  }
+  /* 2. En cas de support d'object-fit, écrase les règles en (1) */
+  @supports (object-fit: cover) {
+    #full-screen-video-container > video {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+    }
+  }
