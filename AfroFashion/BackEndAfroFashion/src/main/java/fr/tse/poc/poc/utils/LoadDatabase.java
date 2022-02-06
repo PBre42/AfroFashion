@@ -36,21 +36,39 @@ public class LoadDatabase {
 
         Article article1 = new Article();
         article1.setId(1L);
-        article1.setLibelle("libelle1");
-        article1.setDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia architecto saepe aspernatur labore nulla quis expedita iste debitis dolores voluptatibus, qui pariatur commodi animi modi.");
-        article1.setImage("../assets/img/img1.jpg");
-        article1.setPrix(1111.0d);
+        article1.setLibelle("Jupe portefeuille");
+        article1.setDescription("Jupe portefeuille/cape bleue marine");
+        article1.setImage("../assets/img/article1.jpg");
+        article1.setPrix(489.0d);
         articleRepository.save(article1);
         log.info(article1 + " saved to database.");
 
         Article article2 = new Article();
         article2.setId(2L);
-        article2.setLibelle("libelle2");
-        article2.setDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia architecto saepe aspernatur labore nulla quis expedita iste debitis dolores voluptatibus, qui pariatur commodi animi modi.");
-        article2.setImage("../assets/img/img2.jpg");
-        article2.setPrix(1111.0d);
+        article2.setLibelle("Tailleur");
+        article2.setDescription("Tailleur femme");
+        article2.setImage("../assets/img/article2.jpg");
+        article2.setPrix(1259.0d);
         articleRepository.save(article2);
         log.info(article2 + " saved to database.");
+
+        Article article3 = new Article();
+        article3.setId(2L);
+        article3.setLibelle("Pantalon");
+        article3.setDescription("Pantalon noir femme");
+        article3.setImage("../assets/img/article3.jpg");
+        article3.setPrix(478.0d);
+        articleRepository.save(article3);
+        log.info(article3 + " saved to database.");
+
+        Article article4 = new Article();
+        article4.setId(2L);
+        article4.setLibelle("Cardigan");
+        article4.setDescription("Manteau femme, robe portfeuille orange");
+        article4.setImage("../assets/img/article4.jpg");
+        article4.setPrix(539.0d);
+        articleRepository.save(article4);
+        log.info(article4 + " saved to database.");
     }
 
     private void initSteps(EtapeRepository etapeRepository, ReponseRepository reponseRepository, ParcoursRepository parcoursRepository){
