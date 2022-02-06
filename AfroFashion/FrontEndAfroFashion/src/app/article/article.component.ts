@@ -1,3 +1,6 @@
+import { Observable } from 'rxjs';
+import { Article } from './../model/article';
+import { ArticleService } from './../service/article.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +9,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./article.component.css']
 })
 export class ArticleComponent implements OnInit {
+  articles: Observable<Article[]> | undefined;
+  constructor(private readonly articleService: ArticleService) {}
 
-  constructor() { }
-
-  ngOnInit(): void {
+  ngOnInit() {
+   this.getArticleList();
   }
+  private getArticleList(){
+   
+    this.articles = this.articleService.articles;
 
+    this.articleService.fetchList();
+  
+  }
 }

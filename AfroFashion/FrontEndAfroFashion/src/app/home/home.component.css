@@ -103,6 +103,37 @@ h1{
       left: -100%;
     }
   }
+  @media (max-width:820px) {
+    h1 {
+      font-size: 100pt;
+      margin-bottom: 300px;
+    }
+  }
+  @media (max-width:768px) {
+    h1 {
+      font-size: 80pt;
+      margin-bottom: 300px;
+    }
+  }
+  @media (max-width:620px) {
+    h1 {
+      font-size: 45pt;
+      margin-bottom: 300px;
+    }
+  }
+  @media (max-width:480px) {
+    h1 {
+      font-size: 40pt;
+      margin-bottom: 300px;
+    }
+  }
+  @media (max-width:320px) {
+    h1 {
+      font-size: 35pt;
+      margin-bottom: 300px;
+    }
+  }
+
   /* 2. En cas de support d'object-fit, écrase les règles en (1) */
   @supports (object-fit: cover) {
     #full-screen-video-container > video {

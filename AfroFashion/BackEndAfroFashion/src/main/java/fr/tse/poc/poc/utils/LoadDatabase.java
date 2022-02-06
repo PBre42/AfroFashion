@@ -37,8 +37,8 @@ public class LoadDatabase {
         Article article1 = new Article();
         article1.setId(1L);
         article1.setLibelle("libelle1");
-        article1.setDescription("description1");
-        article1.setImage("image1");
+        article1.setDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia architecto saepe aspernatur labore nulla quis expedita iste debitis dolores voluptatibus, qui pariatur commodi animi modi.");
+        article1.setImage("../assets/img/img1.jpg");
         article1.setPrix(1111.0d);
         articleRepository.save(article1);
         log.info(article1 + " saved to database.");
@@ -46,8 +46,8 @@ public class LoadDatabase {
         Article article2 = new Article();
         article2.setId(2L);
         article2.setLibelle("libelle2");
-        article2.setDescription("description2");
-        article2.setImage("image2");
+        article2.setDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia architecto saepe aspernatur labore nulla quis expedita iste debitis dolores voluptatibus, qui pariatur commodi animi modi.");
+        article2.setImage("../assets/img/img2.jpg");
         article2.setPrix(1111.0d);
         articleRepository.save(article2);
         log.info(article2 + " saved to database.");
