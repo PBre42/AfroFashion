@@ -9,4 +9,4 @@ Authors:
 ARBARETAZ Aurélien
 BENMOUSSA Mohammed
 -Front-End:
-BREGNAC Pierre
+BREGNAC Tom-Pierre
