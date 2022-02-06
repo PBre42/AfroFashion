@@ -2,7 +2,7 @@
 Projet Startup POC Afrofashionthèque 
 
 ## :clapper: Demo
-![POC]()
+![POC](https://github.com/PBre42/AfroFashion/blob/main/demoAfroFashion.gif)
 
 Authors:
 - Back-End:
