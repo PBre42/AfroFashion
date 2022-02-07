@@ -53,7 +53,7 @@ public class LoadDatabase {
         log.info(article2 + " saved to database.");
 
         Article article3 = new Article();
-        article3.setId(2L);
+        article3.setId(3L);
         article3.setLibelle("Pantalon");
         article3.setDescription("Pantalon noir femme");
         article3.setImage("../assets/img/article3.jpg");
@@ -62,7 +62,7 @@ public class LoadDatabase {
         log.info(article3 + " saved to database.");
 
         Article article4 = new Article();
-        article4.setId(2L);
+        article4.setId(4L);
         article4.setLibelle("Cardigan");
         article4.setDescription("Manteau femme, robe portfeuille orange");
         article4.setImage("../assets/img/article4.jpg");

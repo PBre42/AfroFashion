@@ -38,14 +38,14 @@ export class GameComponent implements OnInit {
     });
   }else{
     
-    this.retrieveTutorials();
+    this.retrieveParcoursWithResponse();
   }
   }
   videoEnd(){
     this.show = !this.show;
   }
 
-  retrieveTutorials() {
+  retrieveParcoursWithResponse() {
     this.gameService.getAll()
       .subscribe(
         data => {
@@ -59,7 +59,7 @@ export class GameComponent implements OnInit {
           console.log(error);
         });
   }
-  employeeDetails(id: number){
+  response(id: number){
     this.router.navigateByUrl('', { skipLocationChange: true }).then(() => { this.router.navigate(['game',id]); });
     
   }

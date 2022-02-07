@@ -1,29 +1,32 @@
 package fr.tse.poc.poc;
 
+import java.util.Collection;
+
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import fr.tse.poc.poc.dao.ArticleRepository;
-
-import static org.assertj.core.api.Assertions.assertThat;
+import fr.tse.poc.poc.domain.Article;
+import fr.tse.poc.poc.service.ArticleService;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)
 @ActiveProfiles(profiles = "test")
-
-public class PocApplicationTests {
+public class ArticleTest {
 
 	@Autowired
-	private ArticleRepository articleRepository;
+    private ArticleService articleService;
 	
 	@Test
-	public void contexLoads() throws Exception {
-		assertThat(articleRepository).isNotNull();
+	public void testFindAllArticles() {
+		
+		Collection<Article> articles = this.articleService.findAllArticles();
+		
+		Assert.assertEquals(4, articles.size());
 	}
-
-
 }
